@@ -1,11 +1,9 @@
 <template>
   <v-layout>
-     <v-app-bar :elevation="2" color="primary"> <!-- add color prop -->
-      <v-app-bar-title>تطبيق المنتجات</v-app-bar-title>
-      <template v-slot:append>
-        <v-btn icon="mdi-dots-vertical"></v-btn>
-      </template>
-    </v-app-bar>
+    <Header />
+    <v-main class="bg-grey-lighten-3" style="min-height: 100vh">
+      <NuxtPage />
+    </v-main>
   </v-layout>
 </template>
 
@@ -24,5 +22,13 @@ body {
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
+}
+
+.cairo {
+  font-family: 'Cairo', sans-serif;
+}
+
+.v-btn {
+  letter-spacing: 0;
 }
 </style>
